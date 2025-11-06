@@ -160,7 +160,7 @@ VALUES
 ## Integrantes
 - Jakeline Rios Acevedo – Lógica de negocio, formularios y documentación.
 - Jerson Mateo Mendoza – Modelo de datos, repositorios y pruebas.
-- Docente: Msc. Alexandra Guerrero Bocanegra
+- Docente: Alexandra Guerrero Bocanegra
 - Programa: Ingeniería de Software – Institución Universitaria Pascual Bravo
 
 
