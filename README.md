@@ -19,7 +19,7 @@ Completar un flujo UI → Lógica → BD usando patrones de diseño (Singleton, 
 - Los edificios verdes reducen la contaminación de la ciudad en un valor fijo o porcentual cada vez que se construye uno.
 
 ## Funcionalidades 
--	Si el nivel de contaminación supera el 70%, se bloquea la construcción de fábricas.
+-	El jugador puede incrementar los recursos de la ciudad resolviendo un mini-juego tipo puzzle.
 -	Visualizar el estado actual de la ciudad y los recursos mediante gráficos simples y mensajes de retroalimentación.
 
 ## Ejecución
