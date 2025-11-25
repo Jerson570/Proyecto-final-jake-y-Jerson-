@@ -11,12 +11,12 @@ Completar un flujo UI → Lógica → BD usando patrones de diseño (Singleton, 
 - Cada edificio impacta positiva o negativamente uno o más recursos.
 -	La población necesita un mínimo nivel de energía, agua y alimentos para crecer.
 -	Si el nivel de contaminación supera el 70%, se bloquea la construcción de fábricas.
--	Si el nivel de contaminación supera el 70%, se bloquea la construcción de fábricas.
--	Si el nivel de contaminación supera el 70%, se bloquea la construcción de fábricas.
--	Si el nivel de contaminación supera el 70%, se bloquea la construcción de fábricas.
--	Si el nivel de contaminación supera el 70%, se bloquea la construcción de fábricas.
--	Si el nivel de contaminación supera el 70%, se bloquea la construcción de fábricas.
--	Si el nivel de contaminación supera el 70%, se bloquea la construcción de fábricas.
+-	No se puede crear una ciudad con valores negativos en sostenibilidad, población o contaminación.
+-	La sostenibilidad de la ciudad no puede superar el valor máximo de 100.
+-	Los recursos de la ciudad no pueden superar su capacidad máxima definida en la tabla CiudadRecurso.
+-	No se permite eliminar una ciudad si tiene edificios registrados.
+-	Cada edificio debe tener un nombre único dentro de la misma ciudad.
+- Los edificios verdes reducen la contaminación de la ciudad en un valor fijo o porcentual cada vez que se construye uno.
 
 ## Funcionalidades 
 -	Si el nivel de contaminación supera el 70%, se bloquea la construcción de fábricas.
