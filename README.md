@@ -171,7 +171,11 @@ VALUES
 -Ver Recursos:
 
 
-<img width="1530" height="819" alt="image" src="https://github.com/user-attachments/assets/f76622cb-990b-40b6-a9e0-c34ac83fa3ea" />
+<img width="1088" height="771" alt="image" src="https://github.com/user-attachments/assets/750a691f-cef3-44e2-a5de-630224466139" />
+
+-Ganar Recursos:
+
+<img width="1077" height="731" alt="image" src="https://github.com/user-attachments/assets/93eff113-9420-4602-967d-2aa4cf8af8a1" />
 
 
 
