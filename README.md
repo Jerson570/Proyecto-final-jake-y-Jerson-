@@ -22,6 +22,13 @@ Completar un flujo UI → Lógica → BD usando patrones de diseño (Singleton, 
 -	El jugador puede incrementar los recursos de la ciudad resolviendo un mini-juego tipo puzzle.
 -	Visualizar el estado actual de la ciudad y los recursos mediante gráficos simples y mensajes de retroalimentación.
 
+## Normalizacion
+#Primera Forma Normal:
+- En la tabla Ciudad, todos los campos (Nombre, Población, Contaminación, etc.) son valores indivisibles.
+- En la tabla Recurso, tanto el Nombre como la Unidad son atributos simples.
+- En CiudadRecurso, la relación entre ciudad y recurso se maneja mediante un registro por cada combinación, evitando múltiples valores en una misma celda.
+- TipoEdificio y Edificio también contienen exclusivamente datos atómicos.
+
 ## Ejecución
 1. Abrir la solución en Visual Studio
 2. Revisar en "DbConnectionSingleton.cs" la cadena de conexión
