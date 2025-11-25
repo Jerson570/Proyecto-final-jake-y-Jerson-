@@ -28,10 +28,12 @@ Completar un flujo UI → Lógica → BD usando patrones de diseño (Singleton, 
 - En la tabla Recurso, tanto el Nombre como la Unidad son atributos simples.
 - En CiudadRecurso, la relación entre ciudad y recurso se maneja mediante un registro por cada combinación, evitando múltiples valores en una misma celda.
 - TipoEdificio y Edificio también contienen exclusivamente datos atómicos.
+  
 **Segunda Forma Normal:**
   - La única tabla con clave compuesta es CiudadRecurso que seria IdCiudad + IdRecurso.
   - Los atributos CantidadActual y CantidadMaxima dependen de ambos, no de uno solo, por lo tanto no hay dependencias.
   - El resto de tablas tienen claves primarias simples (un solo campo), lo que automáticamente satisface 2FN.
+    
 **Tercera Forma Normal:**
  - En Ciudad, todos los campos dependen exclusivamente de IdCiudad.
  - En TipoEdificio, no existen campos que dependan entre sí; todos dependen de su clave primaria.
