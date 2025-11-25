@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D375A48B-0E12-4E76-926A-3B6116985B9D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GreenCityBuilder.UI</RootNamespace>
+    <AssemblyName>GreenCityBuilder.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>GreenCityBuilder.UI.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EdificioBase.cs" />
+    <Compile Include="EdificioFactory.cs" />
+    <Compile Include="EdificioIndustrial.cs" />
+    <Compile Include="EdificioResidencial.cs" />
+    <Compile Include="EdificioVerde.cs" />
+    <Compile Include="FrmPuzzleRecursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPuzzleRecursos.Designer.cs">
+      <DependentUpon>FrmPuzzleRecursos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IEdificioFactory.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="FrmCiudades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCiudades.Designer.cs">
+      <DependentUpon>FrmCiudades.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmCiudades.resx">
+      <DependentUpon>FrmCiudades.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="FrmEdificios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEdificios.Designer.cs">
+      <DependentUpon>FrmEdificios.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmEdificios.resx">
+      <DependentUpon>FrmEdificios.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="FrmRecursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRecursos.Designer.cs">
+      <DependentUpon>FrmRecursos.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmPuzzleRecursos.resx">
+      <DependentUpon>FrmPuzzleRecursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRecursos.resx">
+      <DependentUpon>FrmRecursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="README.md" />
+    <None Include="Script_Final.sql" />
+    <Compile Include="Entities\Ciudad.cs" />
+    <Compile Include="Entities\TipoEdificio.cs" />
+    <Compile Include="Entities\EdificioListado.cs" />
+    <Compile Include="Entities\Recurso.cs" />
+    <Compile Include="Entities\CiudadRecurso.cs" />
+    <Compile Include="Data\DbConnectionSingleton.cs" />
+    <Compile Include="Data\Repositories\ICiudadRepository.cs" />
+    <Compile Include="Data\Repositories\IEntradaCatalogoRepository.cs" />
+    <Compile Include="Data\Repositories\IEdificioRepository.cs" />
+    <Compile Include="Data\Repositories\ICiudadRecursoRepository.cs" />
+    <Compile Include="Data\Repositories\SqlCiudadRepository.cs" />
+    <Compile Include="Data\Repositories\SqlEntradaCatalogoRepository.cs" />
+    <Compile Include="Data\Repositories\SqlEdificioRepository.cs" />
+    <Compile Include="Data\Repositories\SqlCiudadRecursoRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
